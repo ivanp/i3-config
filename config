@@ -148,16 +148,11 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+	tray_output none
+	mode hide
+	hidden_state hide
 }
 
-exec --no-startup-id xfsettingsd
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id xscreensaver
-exec /usr/bin/start-pulseaudio-x11
-exec --no-startup-id /opt/extras.ubuntu.com/touchpad-indicator/bin/touchpad-indicator
-exec --no-startup-id xfce4-panel --disable-wm-check
-exec --no-startup-id xfce4-volumed
-exec_always nm-applet
 
 
 
