@@ -2,9 +2,10 @@
 My i3 config with xfce4
 
 ## Requirements
-- Ubuntu 16.04
+- Xubuntu 16.04 (or install package xubuntu-desktop)
 - [atareao's touchpad-indicator](https://launchpad.net/touchpad-indicator)
-- ```apt install i3 xubuntu-desktop```
+- [rofi](https://davedavenport.github.io/rofi/)
+- [nitrogen](http://projects.l3ib.org/nitrogen/)
 - Optional: ```apt install typecatcher fonts-noto```
  
 ## What worked
@@ -13,10 +14,6 @@ My i3 config with xfce4
 - Touchpad control
 - Network manager
 - Lock & suspend
-
-## Doesn't work/bugs
-- Mute key
-- Notification icons appear sometimes on both xfce panel, sometimes on i3bar
 
 ## Tips
 - Dota 2 must set to Borderless Window for smoother switching

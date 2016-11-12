@@ -36,11 +36,12 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # lock screen
 bindsym $mod+l exec i3lock
@@ -147,7 +148,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+#        status_command i3status
 	tray_output none
 	mode hide
 	hidden_state hide
@@ -155,4 +156,8 @@ bar {
 
 
 
+exec --no-startup-id nitrogen --restore
+
+# No window
+new_window 1pixel
 
